@@ -315,3 +315,9 @@
         transform:scale(1.05);
     }
 }
+
+@media screen and (max-width:500px){
+    .timeline-title{
+        line-height: 1.6rem;
+    }
+}

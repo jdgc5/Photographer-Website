@@ -469,3 +469,9 @@
         font-size: 26px;
         line-height: 36px;
     }
+
+    @media screen and (max-width:600px) {
+        .noneMvl{
+            display: none;
+        }
+    }

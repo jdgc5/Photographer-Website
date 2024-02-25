@@ -224,7 +224,7 @@ font-family: 'Acre', sans-serif;
     font-size: 18px;
 }
 
-.textual-highlights .text-text {
+.textual-highlights, .text-text {
     font-size: clamp(0.7rem,
             0.9857rem + 1.0286vw,
             1.3rem);
@@ -377,10 +377,29 @@ span {
     .text-text{
         line-height:2rem;
     }
+    .ml25{
+        margin-left: 15rem !important;
+    }
 }
 
 @media(max-width:600px){
     .text-text{
-        line-height:1.75rem !important ;
+        line-height:1.6rem;
+        font-size: clamp(0.6rem, 0.8857rem + 0.9286vw, 1.2rem);
+    }
+    .textual-highlights{
+        padding: 50px;
+        gap:25px;
+    }
+    .textual-highlights .big-text {
+        font-size: clamp(2rem, 1.1857rem + 2.4286vw, 6.3rem);
+        letter-spacing: 2px;
+        line-height: normal;
+    }
+}
+@media(max-width:500px){
+    .text-text{
+        line-height: 1.4rem;
+        letter-spacing: 0.5px;
     }
 }

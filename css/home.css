@@ -19,7 +19,6 @@ body {
 
 .logoFoot img {
     width: 320px;
-    height: 320px;
 }
 
 .hero {
@@ -89,6 +88,11 @@ nav {
 
 .navli {
     flex: 3;
+}
+
+.show {
+    transition: all 200ms ease-in-out;
+    opacity: 1;
 }
 
 .menu ul {
@@ -848,7 +852,7 @@ input::placeholder {
     align-items: center;
     align-content: center;
     height: 100%;
-    width: 35%;
+    width: 45%;
     margin: 0 auto;
 }
 
@@ -863,14 +867,14 @@ input::placeholder {
 
 .endRoutePhrase h2{
     text-align: center;
-    line-height: 3.5rem;
+    line-height: 3.8rem;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
     color: rgba(255, 255, 255, 0.9);
-    font-size: 2.1rem;
+    font-size: 2.4rem;
     font-style: italic;
     position: absolute;
-    width: 35%;
+    width: 55%;
 }
 
 
@@ -947,7 +951,7 @@ img {
     }
     .subtitle{
         left:18%;
-        top:43%;
+        top:40%;
     }
     .photoAboutUs{
         padding-bottom: 60vh;
@@ -978,6 +982,10 @@ img {
     .second-container.letter:first-child{
         flex-direction: column;
     }
+    .hero{
+        background-position: 50% !important;
+		background-attachment: scroll;
+    }
 }
 
 @media (max-width: 1229px){
@@ -994,6 +1002,11 @@ img {
         transform: translateY(-50%);
         z-index: 0;
         position: absolute;
+    }
+
+    .hero{
+        background-position: 75% !important;
+		background-attachment: scroll;
     }
 
     .contact-form-content form {
@@ -1046,6 +1059,17 @@ img {
     }
     .containerContadores{
         gap:0rem;
+        padding: 0rem 1rem;
+    }
+    .show {
+        display: flex;
+        transition: all 300ms ease-in-out;
+        top:0;
+        left:0;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        z-index: 25;
     }
 }
 
@@ -1071,6 +1095,9 @@ img {
     .decoration{
         top:-566px;
         font-size:60vh;
+    }
+    .gallery .textual-highlights{
+        justify-content: initial;
     }
 }
 
@@ -1100,5 +1127,119 @@ img {
 @media (max-width:600px){
     .text-text{
         line-height: 1.9rem;
+    }
+    .counter-container{
+        margin: 30px 20px;
+    }
+    .projectText {
+        font-size: clamp(3rem, 3.1857rem + 3.4286vw, 7.3rem) !important;
+    }
+}
+
+@media (max-width:600px){
+    .title{
+        letter-spacing: 1px;
+        line-height: 3.5rem;
+        text-align: center;
+        mix-blend-mode: initial;
+    }
+    .heroMessage{
+        height: auto;
+        margin-top: 30rem;
+    }
+    .subtitle{
+        top:74%;
+        font-size: clamp(1.2rem,0.362rem + 1.261vw,3.1rem);
+    }
+    .decoration{
+        top:-338px;
+        font-size:50vh;
+    }
+    .heroIMG{
+        background-position: 20% !important;
+    }
+    .cell{
+
+        max-width: 550px;
+    }
+    .article_inner{
+        padding: 20px;
+    }
+    .clients {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        gap:2px;
+    }
+    
+    .clients-client {
+        margin: 0;
+        flex-basis: calc(50% - 10px); 
+        box-sizing: border-box; 
+        
+    }
+    
+    .clients-clientInner {
+        text-align: center;
+        padding: 10px; 
+    }
+    .container-contact{
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width:650px){
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        grid-auto-rows: minmax(200px, auto); 
+        gap: 1rem;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .cell11, .cell8{
+        grid-column: span 2;
+    }
+}
+
+@media (max-width:500px){
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        grid-auto-rows: minmax(150px, auto); 
+        gap: 1rem;
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:400px){
+    .title, .subtitle{
+        display: none;
+    }
+    .logo img {
+        width: 124px;
+        height: 120px;
+    }
+    .decoration{
+        top:-338px;
+        font-size:50vh;
+    }
+    .endRoutePhrase h2 {
+        font-size: 1.2rem;
+        line-height: 2.3rem;
+        width: 90%;
+    }
+    .decoration2{
+        right:0px;
+        font-size: 17vh;
+    }
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+        grid-auto-rows: minmax(120px, auto); 
+        gap: 1rem;
+        width: 95%;
+        margin: 0 auto;
     }
 }
