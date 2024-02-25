@@ -407,6 +407,7 @@ i.fa.fa-arrow-up::before{
 
 .freedom{
     position: relative;
+    text-align: center;
 }
 
 .decoration2 {
@@ -1211,6 +1212,9 @@ img {
         width: 95%;
         margin: 0 auto;
     }
+    .cell12{
+        grid-column: span 2;
+    }
 }
 
 @media (max-width:400px){
@@ -1242,4 +1246,5 @@ img {
         width: 95%;
         margin: 0 auto;
     }
+
 }

@@ -378,7 +378,7 @@ span {
         line-height:2rem;
     }
     .ml25{
-        margin-left: 15rem !important;
+        margin-left: 10rem !important;
     }
 }
 
@@ -395,6 +395,9 @@ span {
         font-size: clamp(2rem, 1.1857rem + 2.4286vw, 6.3rem);
         letter-spacing: 2px;
         line-height: normal;
+    }
+    .ml15{
+        margin-left: 7rem !important;
     }
 }
 @media(max-width:500px){
