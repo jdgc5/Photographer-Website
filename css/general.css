@@ -406,3 +406,9 @@ span {
         letter-spacing: 0.5px;
     }
 }
+
+@media(max-height:980px){
+    .biocontainers{
+        height: auto;
+    }
+}

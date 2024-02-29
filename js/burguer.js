@@ -1,11 +1,21 @@
-$(document).ready(function() {
-  var menuToggle = $("#menu-toggle");
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggleContainer = document.querySelector('.menu-toggle');
+    const navLi = document.querySelector('.navli');
 
-  menuToggle.on("click", function() {
-      if ($(this).hasClass("active")) {
-          $(this).removeClass("active");
-      } else {
-          $(this).addClass("active");
-      }
-  });
+    menuToggleContainer.addEventListener('click', function() {
+        navLi.classList.toggle('active');
+    });
+});
+
+
+function ocultarToggle() {
+    if ($(window).width() >= 980) {
+        $('.menu-toggle').css('display', 'none'); 
+    } else {
+        $('.menu-toggle').css('display', 'flex'); 
+    }
+}
+
+$(window).resize(function() {
+    ocultarToggle();
 });

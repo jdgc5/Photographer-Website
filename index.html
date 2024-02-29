@@ -43,9 +43,9 @@
                 <ul class="navli">
                     <li><a href="#inicio">Home</a></li>
                     <li><a href="#acerca">Biography</a></li>
-                    <li><a href="#servicios">Works</a></li>
-                    <li><a href="#servicios">Gallery</a></li>
-                    <li><a href="#contacto">Contact</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <ul class="redes-sociales">
                     <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></li>
@@ -54,7 +54,7 @@
                     <li><a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest-p"></i></a></li>
                 </ul>
             </nav>
-            <div class="heroMessage">
+            <div class="heroMessage" id="inicio">
                 <h1 class="title">TOMAS KNIGHT</h1>
                 <h5 class="subtitle" data-aos="flip-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1200" data-aos-easing="ease-in-out" data-aos-mirror="true">Photographer</h5>
             </div>
@@ -130,7 +130,7 @@
             </div>
             <div class="second-container3">
                 <div class="decoration">TK</div>
-                <div class="photoAboutUs" id="pic1" data-aos="slide-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true"></div>
+                <div class="photoAboutUs" id="pic1"></div>
             </div>
         </div>
     </div>
@@ -139,10 +139,10 @@
                 <div class="biography">
                     <div class="biographyLeft">
                         <div class="heroIMGContainer">
-                            <div class="heroIMG" data-aos="slide-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true"></div>
+                            <div class="heroIMG"></div>
                         </div>
                     </div>
-                    <div class="biographyRight textual-highlights" data-aos="slide-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true">  
+                    <div class="biographyRight textual-highlights" id="acerca">  
                         <p class="text-text">
                             I'm Thomas Knight, an <span>avid explorer</span> of extraordinary moments through the lens of my camera. 
                             Every snapshot I take narrates a distinct tale, overflowing with emotions and intricacies that etch <span>each moment</span> into memory. 
@@ -188,7 +188,7 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide" style="background-image: url(img/project/1.jpg);">
                                     <div class="route-slider-filter"></div>
-                                    <div class="swiper-slide-content">
+                                    <div class="swiper-slide-content"  id="works">
                                         <h4 class="timeline-title">Light on the Golden Sands</h4>
                                         <p class="timeline-text">The first rays of the sun illuminate the soft golden sand, creating a warm and inviting atmosphere on the tranquil beach at dawn</p>
                                     </div>
@@ -255,7 +255,7 @@
             </div>
             
             <div class="gallery-grid">
-                <div class="cell cell1 cell-tall cell-wide">
+                <div class="cell cell1 cell-tall cell-wide" id="gallery">
                     <span class="overlay-text">Valley of Serenity</span>
                 </div>
                 <div class="cell cell2 cell-tall">
@@ -296,7 +296,7 @@
 
         <!------------------TESTIMONIALS ------------->
 
-        <div class="responsive-container-block bg">
+        <div class="responsive-container-block bg testimonials">
             <div class="textual-highlights rowGap5 width justifyCenter blk">
                 <p class="big-text" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="550" data-aos-easing="ease-in-out" data-aos-mirror="false">Read some of my clients</p><br>
                 <p class="big-text ta fw500 " data-aos="zoom-out" data-aos-offset="200" data-aos-delay="50" data-aos-duration="550" data-aos-easing="ease-in-out" data-aos-mirror="false">feedback
@@ -305,7 +305,7 @@
             </div>
             <div class="swiper-container2 mySwiper">
                 <div class="swiper-wrapper2">
-                    <div class="swiper-slide2" data-aos="slide-right" data-aos-offset="250" data-aos-delay="70" data-aos-duration="650" data-aos-easing="ease-in-out" data-aos-mirror="true">
+                    <div class="swiper-slide2">
                         <div class="responsive-container-block content">
                             <p class="text-blk name">
                                 Jane Doe
@@ -320,7 +320,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="swiper-slide2" data-aos="zoom-out" data-aos-offset="250" data-aos-delay="70" data-aos-duration="650" data-aos-easing="ease-in-out" data-aos-mirror="true">
+                    <div class="swiper-slide2">
                         <div class="responsive-container-block content">
                             <p class="text-blk name">
                                 Louis Richarson
@@ -335,7 +335,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="swiper-slide2" data-aos="slide-left" data-aos-offset="250" data-aos-delay="70" data-aos-duration="650" data-aos-easing="ease-in-out" data-aos-mirror="true">
+                    <div class="swiper-slide2">
                         <div class="responsive-container-block content noneMvl">
                             <p class="text-blk name">
                                 Carl Lewis
@@ -357,10 +357,10 @@
         <!------------------ CONTACT ----------------->
 
         <div class="container-contact">
-            <div class="textual-highlights rowGap5 width display">
-                <p class="big-text ml5 want" data-aos="fade-up" data-aos-offset="250" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false">want to find me?</p><br>
+            <div class="textual-highlights rowGap5 width display" id="contact">
+                <p class="big-text ml5 want" >want to find me?</p><br>
             </div>
-            <section class="contact-form" data-aos="slide-left" data-aos-offset="250" data-aos-delay="70" data-aos-duration="650" data-aos-easing="ease-in-out" data-aos-mirror="true">
+            <section class="contact-form">
                 <div class="contact-form-content">
                     <form action="" class="contact-form-form" >
                         <div class="form-group">
@@ -429,7 +429,7 @@
 
         <!------------------ELEMENTS ----------------->
         <div class="article_inner">
-            <div class="clients" data-aos="slide-up" data-aos-offset="230" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true">
+            <div class="clients">
                 <div class="clients-client">
                     <div class="clients-clientInner">
                         <img src="img/logo-apple.svg" alt="Apple Logo">
@@ -475,11 +475,11 @@
                     <div class="footer-menu">
                         <div class="footer-title">Menu</div>
                         <div class="footer-content">
-                            <a href="home.html">Home</a>
-                            <a href="directions.html">Biography</a>
-                            <a href="routes.html">Works</a>
-                            <a href="routes.html">Gallery</a>
-                            <a href="contact.html">Contact</a>
+                            <a href="#inicio">Home</a>
+                            <a href="#acerca">Biography</a>
+                            <a href="#works">Works</a>
+                            <a href="#gallery">Gallery</a>
+                            <a href="#contact">Contact</a>
                         </div>
                     </div>
                     <div class="footer-policies">
